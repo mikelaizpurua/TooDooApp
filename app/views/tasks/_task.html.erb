@@ -1,0 +1,6 @@
+<%= content_tag_for(:li, task) do %>
+<p>
+  <%= link_to task.name, task %>
+  <%= link_to '[x]', task, method: :delete, data: { confirm: 'Are you sure?' } %>
+</p>
+<% end %>
